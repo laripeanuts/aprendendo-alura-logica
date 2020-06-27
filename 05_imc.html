@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinhaBasica () {
+
+        document.write("<br>");
+
+    }
+
+    function quebraLinha () {
+
+        document.write("<br><hr>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+    }
+
+    function calculoIMC(peso, altura) {
+
+        var imc = peso / (altura * altura)
+        return Math.round(imc);
+
+    }
+
+var pesoErica = 96;
+var alturaErica = 1.63;
+var imcErica = calculoIMC(pesoErica,alturaErica);
+
+var pesoFN = 51;
+var alturaFN = 1.50;
+var imcFN = calculoIMC(pesoFN,alturaFN);
+
+mostra("<h3>Feito com a função</h3>");
+
+mostra("ÉRICA: " + imcErica)
+mostra("FLÁVIO NETO: " + imcFN)
+mostra("AMBOS SOMADOS: " + (imcErica + imcFN))
+
+
+quebraLinhaBasica ();
+
+</script>
+
+<script>
+
+    function quebraLinha () {
+
+        document.write("<br><hr>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+    }
+
+var pesoErica = 96;
+var alturaErica = 1.63;
+var imcErica = pesoErica / (alturaErica * alturaErica);
+
+var pesoFN = 51;
+var alturaFN= 1.50;
+var imcFN = pesoFN / (alturaFN * alturaFN);
+
+mostra("<h3>Feito manualmente</h3>");
+
+mostra("O IMC da Érica é " + Math.round(imcErica))
+mostra("O IMC do Flávio Neto é " + Math.round(imcFN))
+
+</script>

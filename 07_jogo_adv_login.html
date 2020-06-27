@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinha () {
+
+        document.write("<br><hr>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random*10);
+
+    var tentativasAtual = 1;
+    var numeroTentativas = 3;
+
+    while(tentativasAtual <= numeroTentativas) {
+      
+        var numeroChute = parseInt(prompt("Digite um chute aleatório de 0 a 10:"))
+
+        if (numeroChute == numeroPensado) {
+ 
+            mostra("Você é o bichão mesmo, hein? O número era " + numeroPensado)
+            break;
+
+        } else {
+ 
+        mostra("Você não sabe de nada, inocente")
+        }
+
+        tentativasAtual++
+    }
+
+    mostra("fim!")
+
+</script>

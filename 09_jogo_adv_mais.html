@@ -1,0 +1,84 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Sera se é Dinah?!</button>
+
+<script>
+
+    function sorteio() {
+
+        return (Math.round(Math.random()*10));
+    }
+
+    function sorteioNumeros(quantidade) {
+
+        var segredoSN = [];
+
+        var numero = 1;
+
+        while(numero <= quantidade) {
+
+            var numeroAleatorio = sorteio();
+            
+            if(numeroAleatorio != 0) {
+
+                var verificou = false;
+
+                for(var posicao = 0; posicao < segredoSN.length; posicao++) {
+
+                    if(segredoSN[posicao] == numeroAleatorio) {
+                        verificou = true;
+                        break; 
+                    }
+                }
+
+                if(verificou == false) { 
+                
+                    segredoSN.push(numeroAleatorio);
+                    numero++
+                }           
+            }
+        }
+
+        return segredoSN;
+    }
+
+    var segredo = sorteioNumeros(3);
+
+    console.log(segredo);
+
+    var inputScript = document.querySelector("input");
+    inputScript.focus();
+
+    function verifica() {
+
+        var verificou = false;
+
+        for(var posicao = 0; posicao < segredo.length; posicao++) {
+
+            if(inputScript.value == segredo[posicao]) {
+
+                alert("Você é o bichão mermo!");
+                verificou = true;
+                break;
+            } 
+        }
+
+        if(!verificou) {
+
+            alert("Você não sabe de nada, inocente!");
+        }
+
+        inputScript.value = "";
+        inputScript.focus();
+    }
+
+    var botao = document.querySelector("button");
+    
+    botao.onclick = verifica;
+
+    document.write ("<br><br>Códigos sorteados: " + segredo)
+    document.write ("<br><br>fim!")
+
+
+</script>

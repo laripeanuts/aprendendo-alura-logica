@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinha () {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase + ". (mensagem automática toda vida que chamar 'mostra')");
+        quebraLinha();
+    }
+
+    var anoAtual = 2020
+    var anoDescobrimento = 1500
+    var duracaoGeracao = 28
+    
+    var anosPassados = anoAtual - anoDescobrimento
+    var resultadoGeracoes = anosPassados/duracaoGeracao
+
+    mostra("A quantidade de gerações no brasil desde de 1500 é de " + Math.round(resultadoGeracoes));
+
+    mostra("Respeite o tanto de gente que nasceu achando o brasil foi descoberto 1500 mas forma os indios que descobriram")
+
+</script>

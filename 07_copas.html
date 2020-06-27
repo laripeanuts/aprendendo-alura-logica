@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinha () {
+
+        document.write("<br><hr>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+    }
+
+    var dataLimite = prompt("Entre com a data limite: ")
+    var anoCopa = 1930;
+
+    while(anoCopa <= dataLimite) {
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4
+
+    }
+
+    mostra("FIM.")
+
+</script>

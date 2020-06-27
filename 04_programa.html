@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinha() {
+
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+
+    }
+
+    var ano = 2020;
+    
+    var idadeLarissa = ano - 1990
+    var idadePatricia = ano - 1989
+    var idadeFernanda = ano - 1983
+    var media = (idadeLarissa + idadePatricia + idadeFernanda)/3;
+
+    var quebraLinhaBasica = "<br>"
+
+    mostra("Nossa idade hoje:");
+
+    mostra("A idade da Larissa é: " + idadeLarissa + " anos.");
+
+    mostra("A idade da Patrícia é: " + idadePatricia + " anos.");
+
+    mostra("A idade da Fernanda é: " + idadeFernanda + " anos.");
+
+    mostra("A média das nossas idades é " + Math.round(media) + " anos.");
+    quebraLinha();
+
+    // daqui pra frente é apenas mudança de var
+
+    var ano = 2050
+
+    var idadeLarissa = ano - 1990
+    var idadePatricia = ano - 1989
+    var idadeFernanda = ano - 1983
+    var media = (idadeLarissa + idadePatricia + idadeFernanda)/3;
+
+
+    mostra("Agora daqui há 50 anos:");
+    quebraLinha();
+    mostra("A idade da Larissa é: " + idadeLarissa + " anos.");
+    quebraLinha();
+    mostra("A idade da Patrícia é: " + idadePatricia + " anos.");
+    quebraLinha();
+    mostra("A idade da Fernanda é: " + idadeFernanda + " anos.");
+    quebraLinha();
+    mostra("A média das nossas idades é " + Math.round(media) + " anos.");
+
+
+</script>

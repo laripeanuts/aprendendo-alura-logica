@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function quebraLinha () {
+
+        document.write("<br><hr>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        quebraLinha();
+    }
+
+    var numInicial = 30
+
+    while(numInicial <= 40) {
+        
+        if(numInicial != 33 && numInicial !=37) {
+
+        mostra("o número é: " + numInicial)
+
+        }
+
+        numInicial = numInicial + 1
+    }
+
+    mostra("FIM.")
+
+</script>

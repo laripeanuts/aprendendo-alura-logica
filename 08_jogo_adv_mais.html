@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare o segredo!</button>
+
+<script>
+
+    var segredo = 5;
+
+    var inputScript = document.querySelector("input");
+    inputScript.focus();
+
+    function verifica() {
+
+        if(inputScript.value == segredo) {
+
+        alert("Você é o bichão mermo!");
+
+        } else {
+
+        alert("Você não sabe de nada, inocente!");
+        
+        }
+
+        inputScript.value = "";
+        inputScript.focus();
+    }
+
+    var botao = document.querySelector("button");
+    
+    botao.onclick = verifica;
+
+    document.write ("<br><br>fim!")
+
+
+</script>
